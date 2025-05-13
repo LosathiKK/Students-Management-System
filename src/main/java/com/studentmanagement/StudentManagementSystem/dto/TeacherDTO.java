@@ -31,4 +31,8 @@ public class TeacherDTO {
     private String officeLocation;
 
     private String officeHours;
+
+    public Integer getUserId() {
+        return 0;
+    }
 }

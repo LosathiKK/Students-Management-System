@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 
 @Data
 @NoArgsConstructor
@@ -43,4 +44,16 @@ public class UserDTO {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    public Map<Object, Object> getPassword() {
+
+        return Map.of();
+    }
+
+    public void setCreatedAt(Object createdAt) {
+    }
+
+    public void setPassword(Object password) {
+
+    }
 }

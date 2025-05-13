@@ -40,4 +40,8 @@ public class StudentDTO {
     private String programOfStudy;
 
     private String currentSemester;
+
+    public Integer getUserId() {
+        return 0;
+    }
 }

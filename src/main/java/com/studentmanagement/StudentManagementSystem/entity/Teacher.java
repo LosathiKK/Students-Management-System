@@ -35,4 +35,10 @@ public class Teacher {
 
     @Column(name = "office_hours")
     private String officeHours;
+
+    public void setId(Integer id) {
+    }
+
+    public void setUser(User user) {
+    }
 }

@@ -43,4 +43,15 @@ public class Student {
 
     @Column(name = "current_semester")
     private String currentSemester;
+
+    public void setUser(User user) {
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
+    }
 }

@@ -47,4 +47,24 @@ public class Grade {
     private User gradedBy;
 
     private String remarks;
+
+    public void setGradedAt(LocalDateTime gradedAt) {
+        this.gradedAt = gradedAt;
+    }
+
+    public LocalDateTime getGradedAt() {
+        return gradedAt;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Object getGradeType() {
+        return null;
+    }
 }

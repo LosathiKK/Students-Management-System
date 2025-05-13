@@ -22,4 +22,8 @@ public interface CourseRepository extends JpaRepository<Course, Integer> {
     List<Course> findByActive(Boolean active);
 
     boolean existsByCourseCode(String courseCode);
+
+    List<Course> findByTeacherId(Integer teacherId);
+
+    List<Course> findByActiveTrue();
 }

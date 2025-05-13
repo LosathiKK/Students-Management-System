@@ -30,4 +30,15 @@ public interface AttendanceRepository extends JpaRepository<Attendance, Integer>
     Optional<Attendance> findByStudentAndCourseAndAttendanceDate(Student student, Course course, LocalDate attendanceDate);
 
     List<Attendance> findByStatus(String status);
+
+    // Additional methods for direct ID queries
+    List<Attendance> findByStudentId(Integer studentId);
+
+    List<Attendance> findByCourseId(Integer courseId);
+
+    List<Attendance> findByStudentIdAndCourseId(Integer studentId, Integer courseId);
+
+    List<Attendance> findByStudentIdAndAttendanceDateBetween(Integer studentId, LocalDate startDate, LocalDate endDate);
+
+    List<Attendance> findByCourseIdAndAttendanceDateBetween(Integer courseId, LocalDate startDate, LocalDate endDate);
 }

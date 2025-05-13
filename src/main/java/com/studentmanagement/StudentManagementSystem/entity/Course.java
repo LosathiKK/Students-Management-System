@@ -55,4 +55,30 @@ public class Course {
     protected void onUpdate() {
         updatedAt = LocalDateTime.now();
     }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setId(Integer id) {
+    }
+
+    public void setTeacher(Teacher teacher) {
+    }
+
+    public void setActive(boolean b) {
+
+    }
 }
